@@ -1,0 +1,95 @@
+:root {
+            --primary-color: #00ffff;
+            --background-color: #0a0a0a;
+            --text-color: #ffffff;
+        }
+        
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 1rem;
+            box-sizing: border-box;
+        }
+        .container {   
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+            width: 100%;
+            max-width: 800px;
+        }
+        h1 {
+            color: var(--primary-color);
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+        form {
+            display: grid;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .input-group {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+        input, button {
+            padding: 0.75rem;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--primary-color);
+            color: var(--text-color);
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        button {
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.1s;
+            margin-top: 1rem;
+        }
+        button:hover {
+            background-color: #00cccc;
+        }
+        button:active {
+            transform: scale(0.98);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+        }
+        th, td {
+            border: 1px solid var(--primary-color);
+            padding: 0.75rem;
+            text-align: left;
+        }
+        th {
+            background-color: rgba(0, 255, 255, 0.2);
+        }
+        
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            .container {
+                padding: 3rem;
+            }
+            input, button {
+                font-size: 1.1rem;
+            }
+            table {
+                font-size: 1rem;
+        }
+}
