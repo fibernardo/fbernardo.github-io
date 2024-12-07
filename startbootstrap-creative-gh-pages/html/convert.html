@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversion Calculator</title>
+	<link rel="stylesheet" href="CSS/style_convert.css">
+    <script src="JS/script_convert.js" defer></script>
+</head>
+<body>
+    <h1>Unit Converter</h1>
+    
+    <select id="conversionType">
+        <option value="fahrenheitToCelsius">Fahrenheit to Celsius</option>
+        <option value="celsiusToFahrenheit">Celsius to Fahrenheit</option>
+        <option value="metersToFeet">Meters to Feet</option>
+        <option value="feetToMeters">Feet to Meters</option>
+    </select>
+
+    <input type="number" id="inputValue" placeholder="Enter value to convert">
+    
+    <button onclick="convert()">Convert</button>
+    
+    <div id="result"></div>
+</body>
+</html>
